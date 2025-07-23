@@ -24,18 +24,18 @@ const Navigation = () => {
         <li>
           <Link to="#">Home</Link>
           <ul className="dropdown">
-            <li><Link to="/ValueProposition"> ValueProposition </Link></li>
-            <li><Link to="/CompanyOverview"> CompanyOverview</Link></li>
-            <li><Link to="/HighlightingServices"> HighlightingServices</Link></li>
+            <li><Link to="/ValueProposition"> Value Proposition </Link></li>
+            <li><Link to="/CompanyOverview"> Company Overview</Link></li>
+            <li><Link to="/HighlightingServices"> Highlighting Services</Link></li>
           </ul>
         </li>
         <li><Link to="#">Services</Link>
           <ul className="dropdown">
-            <li><Link to="/AIServices"> AI Services </Link></li>
+            <li><Link to="/AIServices"> AI Automation </Link></li>
             <li><Link to="/WebDevelopment"> Web Development</Link></li>
           </ul>
         </li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
+        <li><Link to="/portfolio">Projects</Link></li>
         <li><Link to="/About">About Us</Link></li>
         <li><Link to="/ContactForm" className='connect-btn'>Contact Us </Link></li>
       </ul>
