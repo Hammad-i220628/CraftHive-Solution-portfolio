@@ -18,7 +18,7 @@ const AIServices = () => {
   return (
     <>
         <div className='ThreeD-one'>
-    <h1>Advanced <span style={{color:"#FDF897",fontSize:"2.4rem"}}> AI Solutions </span>  <br/> for Intelligent Business Automation and Growth</h1>
+    <h1>Advanced <span style={{color:"#FDF897",fontSize:"2.4rem"}}> AI Automation </span>  <br/> for Intelligent Business Automation and Growth</h1>
      <p>By choosing CraftHive Solutions' cutting-edge AI services, businesses can automate processes, gain valuable insights, and enhance decision-making capabilities for sustainable growth.</p>
      
     <ul>
@@ -31,9 +31,9 @@ const AIServices = () => {
 
     {/* Portion 2............. */}
     <div className="animation-wrapper">
-      <h2 className="title"data-aos="fade-up" data-aos-duration="1000">CraftHive Solutions Delivers Expert AI Services</h2>
+      <h2 className="title"data-aos="fade-up" data-aos-duration="1000">CraftHive Solutions Delivers Expert AI Automation Services</h2>
       <p className="subtitle"data-aos="fade-up" data-aos-duration="1000">
-      Our expert AI team provides comprehensive artificial intelligence solutions including machine learning, natural language processing, computer vision, and predictive analytics, tailored to meet the unique needs of various industries. We ensure intelligent automation, data-driven insights, and enhanced user experiences.
+      Our expert AI automation team provides comprehensive artificial intelligence solutions including machine learning, natural language processing, computer vision, and predictive analytics, tailored to meet the unique needs of various industries. We ensure intelligent automation, data-driven insights, and enhanced user experiences.
       </p>
       
       <div className="grid-container">
@@ -63,9 +63,9 @@ const AIServices = () => {
 
     {/* AI Solutions Section */}
     <div className="threeD-solutions-wrapper">
-      <h1 className="threeD-solutions-title">AI Solutions</h1>
+      <h1 className="threeD-solutions-title">AI Automation Solutions</h1>
       <p className="threeD-solutions-description">
-        Our expert team specializes in developing intelligent AI solutions, providing cutting-edge technology for various industries, including healthcare, finance, retail, and manufacturing.
+        Our expert team specializes in developing intelligent AI automation solutions, providing cutting-edge technology for various industries, including healthcare, finance, retail, and manufacturing.
       </p>
 
       <div className="threeD-solutions-grid">
@@ -135,42 +135,42 @@ const AIServices = () => {
  {/* portion 4........... */}
  <div className="why-choose-container">
       <h1 className="why-choose-title"data-aos="fade-up" data-aos-duration="1000">
-      Why Choose CraftHive Solutions for AI Services?
+      Why Choose CraftHive Solutions for AI Automation Services?
       </h1>
       <p className="why-choose-description"data-aos="fade-up" data-aos-duration="1000">
-      By choosing CraftHive Solutions, you ensure cutting-edge AI solutions that drive innovation, automate processes, and provide intelligent insights for competitive advantage and business growth.
+      By choosing CraftHive Solutions, you ensure cutting-edge AI automation solutions that drive innovation, automate processes, and provide intelligent insights for competitive advantage and business growth.
       </p>
 
       <div className="why-choose-grid">
         <div className="why-choose-box"data-aos="fade-up" data-aos-duration="1000">
           <FaTools className="why-choose-icon" />
-          <h4>AI Expertise and Innovation</h4>
+          <h4>AI Automation Expertise and Innovation</h4>
           <p>
-            CraftHive Solutions has extensive experience in AI development across various industries. Our skilled team consists of AI specialists, data scientists, and ML engineers who are experts in the latest AI technologies.
+            CraftHive Solutions has extensive experience in AI automation development across various industries. Our skilled team consists of AI specialists, data scientists, and ML engineers who are experts in the latest AI automation technologies.
           </p>
         </div>
 
         <div className="why-choose-box"data-aos="fade-up" data-aos-duration="1000">
           <FaClipboardCheck className="why-choose-icon" />
-          <h4>Comprehensive AI Services</h4>
+          <h4>Comprehensive AI Automation Services</h4>
           <p>
-            We offer end-to-end AI solutions, including machine learning, natural language processing, computer vision, and predictive analytics, ensuring intelligent automation and data-driven insights.
+            We offer end-to-end AI automation solutions, including machine learning, natural language processing, computer vision, and predictive analytics, ensuring intelligent automation and data-driven insights.
           </p>
         </div>
 
         <div className="why-choose-box"data-aos="fade-up" data-aos-duration="1000">
           <FaHeadset className="why-choose-icon" />
-          <h4>24/7 AI Support</h4>
+          <h4>24/7 AI Automation Support</h4>
           <p>
-            Our team provides continuous monitoring and support for AI systems, ensuring optimal performance, model updates, and seamless integration with your existing infrastructure.
+            Our team provides continuous monitoring and support for AI automation systems, ensuring optimal performance, model updates, and seamless integration with your existing infrastructure.
           </p>
         </div>
 
         <div className="why-choose-box"data-aos="fade-up" data-aos-duration="1000">
           <FaCogs className="why-choose-icon" />
-          <h4>Custom AI Solutions</h4>
+          <h4>Custom AI Automation Solutions</h4>
           <p>
-            We develop tailored AI solutions that address your specific business challenges, helping you achieve intelligent automation and gain competitive advantages through data-driven decision making.
+            We develop tailored AI automation solutions that address your specific business challenges, helping you achieve intelligent automation and gain competitive advantages through data-driven decision making.
           </p>
         </div>
       </div>
