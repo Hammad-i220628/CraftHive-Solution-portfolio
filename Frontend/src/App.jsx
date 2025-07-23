@@ -34,12 +34,7 @@ useEffect(() => {
         <AnimatePresence>
       <Navigation />
       <Routes>
-        Define your routes here
-        {/* <Route path="/" element={<Home />} />
-        
-       
-      
-        <Route path="/blog" element={<Blog />} /> */}
+        <Route path="/" element={<Home />} />
          <Route path="/ValueProposition" element={<ValueProposition />} />
         <Route path="/CompanyOverview" element={<CompanyOverview />} />
         <Route path="/HighlightingServices" element={<HighlightingServices />} />
