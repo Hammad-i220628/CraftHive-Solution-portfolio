@@ -31,9 +31,8 @@ const Navigation = () => {
         </li>
         <li><Link to="#">Services</Link>
           <ul className="dropdown">
-            <li><Link to="/ThreeDAnimation"> 3DAnimation </Link></li>
-            <li><Link to="/ContentWriting"> ContentWriting</Link></li>
-            <li><Link to="/WebsiteSolutions"> WebsiteSolutions</Link></li>
+            <li><Link to="/AIServices"> AI Services </Link></li>
+            <li><Link to="/WebDevelopment"> Web Development</Link></li>
           </ul>
         </li>
         <li><Link to="/portfolio">Portfolio</Link></li>

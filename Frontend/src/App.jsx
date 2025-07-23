@@ -12,9 +12,8 @@ import './index.css'
 import Footer from "./Home/Footer";
 import About from './About us/About'
 import SeparateComp from "./Home/SeparateComp";
-import ThreeDAnimation from "./Services/ThreeDAnimation";
-import ContentWriting from "./Services/ContentWriting";
-import WebsiteSolutions from "./Services/WebsiteSolutions";
+import AIServices from "./Services/AIServices";
+import WebDevelopment from "./Services/WebDevelopment";
 import Portfolio from "./Portfolio/Portfolio";
 import { AnimatePresence } from 'framer-motion';
 
@@ -49,9 +48,8 @@ useEffect(() => {
         <Route path="/Footer" element={<Footer/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/SeparateComp" element={<SeparateComp/>} />
-        <Route path="/ThreeDAnimation" element={<ThreeDAnimation />} />
-        <Route path="/ContentWriting" element={<ContentWriting />} />
-        <Route path="/WebsiteSolutions" element={<WebsiteSolutions />} />
+        <Route path="/AIServices" element={<AIServices />} />
+        <Route path="/WebDevelopment" element={<WebDevelopment />} />
         <Route path="/Portfolio" element={<Portfolio />} />
      
       </Routes>
