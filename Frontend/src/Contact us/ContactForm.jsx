@@ -75,24 +75,16 @@ const ContactForm = () => {
      
 
       <div className="child4">
-        <h2>Let’s Work Together</h2>
+        <h2>Let's Work Together</h2>
         <h3>Ready To Work On Your Next Projects</h3>
-        <div className="email-container">
-          <button className="email-btn">
-            <span>uzair332@gmail.com</span>
-            <i className="arrow-icon">→</i>
-          </button>
-        </div>
-      </div>
-
-      <div className="whatsapp-container">
-        <button
-          className="whatsapp-btn"
-          onClick={() => window.open("https://wa.me/3340545803", "_blank")}
+        <button 
+          className="whatsapp-chat-btn" 
+          onClick={() => window.open('https://wa.me/923340545803', '_blank')}
         >
-          <i className="fab fa-whatsapp"></i> Chat via WhatsApp
+          CHAT VIA WHATSAPP
         </button>
       </div>
+
 
       <div className="child5">
         <div className="form-container">
