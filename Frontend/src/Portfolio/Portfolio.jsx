@@ -18,9 +18,6 @@ const ThreeDPortfolio = () => {
   return (
     <section className="portfolio-wrapper">
       
-      <div className="portfolio-banner">
-        <h3>Projects</h3>
-      </div>
       <h2 className="portfolio-heading">OUR Projects</h2>
       <div className="project-wrapper">
         

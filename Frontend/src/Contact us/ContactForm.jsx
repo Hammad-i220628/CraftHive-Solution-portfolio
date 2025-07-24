@@ -68,9 +68,6 @@ const ContactForm = () => {
 
   return (
     <>
-      <div className="contact-banner">
-        {/* <h3>Contact Us</h3> */}
-      </div>
 
       {/* New div added after contact-banner */}
       <div className="background-container">
