@@ -59,7 +59,7 @@ const Navigation = () => {
                     className="connect-btn" 
                     onClick={() => toggleDropdown('services')}
                   >
-                    Services
+                    Technologies
                   </Link>
                 </li>
                 <li><Link to="/AIServices" onClick={closeMenu}>AI Automation</Link></li>
@@ -86,13 +86,44 @@ const Navigation = () => {
             </li>
             <li className={activeDropdown === 'services' ? 'active-dropdown' : ''}>
               {menuOpen ? (
-                <Link to="#" onClick={() => toggleDropdown('services')}>Services</Link>
+                <Link to="#" onClick={() => toggleDropdown('services')}>Technologies</Link>
               ) : (
                 <>
-                  <Link to="#">Services</Link>
-                  <ul className="dropdown">
-                    <li><Link to="/AIServices"> AI Automation </Link></li>
-                    <li><Link to="/WebDevelopment"> Web Development</Link></li>
+                  <Link to="#">Technologies</Link>
+                  <ul className="dropdown tech-dropdown">
+                    <div className="tech-column">
+                      <li><Link to="#">.NET</Link></li>
+                      <li><Link to="#">AI</Link></li>
+                      <li><Link to="#">Angular</Link></li>
+                      <li><Link to="#">AWS</Link></li>
+                      <li><Link to="#">C#</Link></li>
+                      <li><Link to="#">C++</Link></li>
+                    </div>
+                    <div className="tech-column">
+                      <li><Link to="#">Django</Link></li>
+                      <li><Link to="#">Golang</Link></li>
+                      <li><Link to="#">Java</Link></li>
+                      <li><Link to="#">JavaScript</Link></li>
+                      <li><Link to="#">Kotlin</Link></li>
+                      <li><Link to="#">Google Cloud</Link></li>
+                    </div>
+                    <div className="tech-column">
+                      <li><Link to="#">Xamarin</Link></li>
+                      <li><Link to="#">Node.js</Link></li>
+                      <li><Link to="#">PHP</Link></li>
+                      <li><Link to="#">Power BI</Link></li>
+                      <li><Link to="#">Python</Link></li>
+                      <li><Link to="#">Machine Learning</Link></li>
+                    </div>
+                    <div className="tech-column">
+                      <li><Link to="#">React</Link></li>
+                      <li><Link to="#">Ruby</Link></li>
+                      <li><Link to="#">Salesforce</Link></li>
+                      <li><Link to="#">TypeScript</Link></li>
+                      <li><Link to="#">Vue.js</Link></li>
+                      <li><Link to="#">Microsoft Azure</Link></li>
+                    </div>
+                    <li className="all-technologies-link"><Link to="/AllTechnologies">All technologies</Link></li>
                   </ul>
                 </>
               )}

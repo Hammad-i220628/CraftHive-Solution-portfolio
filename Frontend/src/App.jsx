@@ -17,6 +17,7 @@ import SeparateComp from "./Home/SeparateComp";
 import AIServices from "./Services/AIServices";
 import WebDevelopment from "./Services/WebDevelopment";
 import Portfolio from "./Portfolio/Portfolio";
+import AllTechnologies from "./Technologies/AllTechnologies";
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -48,6 +49,7 @@ useEffect(() => {
         <Route path="/AIServices" element={<AIServices />} />
         <Route path="/WebDevelopment" element={<WebDevelopment />} />
         <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/AllTechnologies" element={<AllTechnologies />} />
      
       </Routes>
       </AnimatePresence>
