@@ -9,6 +9,8 @@ import HighlightingServices from "./Home/HighlightingServices";
 import ContactForm from './Contact us/ContactForm';
 import Home from "./Home/Home";
 import './index.css'
+import './responsive.css'
+import './logo-fix.css'
 import Footer from "./Home/Footer";
 import About from './About us/About'
 import SeparateComp from "./Home/SeparateComp";

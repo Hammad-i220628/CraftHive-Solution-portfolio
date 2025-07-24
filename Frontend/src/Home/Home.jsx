@@ -33,7 +33,7 @@ const Home = () => {
     <>
      <div className='container'>
   <div className='child1'>
-    <h1>LET'S <span style={{ fontSize: "35px", fontWeight: "bold" }}>CREATE SOMETHING</span><br />PHENOMENAL</h1>
+    <h1>LET'S <span className="create-text">CREATE SOMETHING</span><br />PHENOMENAL</h1>
     <h3>IT ALL STARTS WITH A CONVERSATION</h3>
     <ul>
       <h4><TiTickOutline />Work with Top 1% Digital Service Provider</h4>
@@ -53,7 +53,7 @@ const Home = () => {
         <div className='container1'>
           <div className='c1child1'>
             <p>What we are Offering</p>
-            <h1>Services Built Specifically <br/>for your <span style={{fontSize: "35px", fontWeight:'bolder'}}>Business</span></h1>
+            <h1>Services Built Specifically <br/>for your <span className="business-text">Business</span></h1>
 
           </div>
        
@@ -108,36 +108,14 @@ const Home = () => {
       </div>
       {/* portion 4.................. */}
     
-    <div style={{ textAlign: "center", padding: "1rem", backgroundColor : "#1A1C1B"
-       }}>
-  <h1
-    style={{
-      margin: "1rem auto",
-      color: "white",
-      fontFamily: "sans-serif",
-      fontSize: "2rem",
-      lineHeight: "1.5",
-    
-      
-    }}
-  >
+    <div className="fullstack-section">
+  <h1 className="fullstack-heading">
     Design. Develop. Maintain. Scale. Your{" "}
-    <span style={{ color: "rgba(223, 13, 13, 0.836)", fontSize: "2.4rem",fontWeight:"bolder" }}>
-      Full-Stack Development
-    </span>
+    <span className="fullstack-highlight">Full-Stack Development</span>
     <br />
-    <span style={{ display: "block", fontSize: "2rem", marginTop: "0.5rem" }}>
-      Partner
-    </span>
+    <span className="fullstack-partner">Partner</span>
   </h1>
-  <p
-    style={{
-      color: "white",
-      fontSize: "1.1rem",
-      maxWidth: "600px",
-      margin: "0.5rem auto",
-    }}
-  >
+  <p className="fullstack-description">
     A Team of 50+ Experts Across 30+ Advanced Technologies
   </p>
 </div>
@@ -216,32 +194,32 @@ const Home = () => {
   <div className="team-box" data-aos="flip-left" data-aos-duration="1000">
     <MdOutlineRocket className="team-icon" />
     <h2>8+</h2>
-    <div style={{ fontSize: '1rem', color: 'white' }}>Years Experience</div>
+    <div className="team-box-description">Years Experience</div>
   </div>
   <div className="team-box" data-aos="flip-left" data-aos-duration="1000">
     <GiDarkSquad className="team-icon" />
     <h2>120+</h2>
-    <div style={{ fontSize: '1rem', color: 'white' }}>Talented Squad</div>
+    <div className="team-box-description">Talented Squad</div>
   </div>
   <div className="team-box" data-aos="flip-left" data-aos-duration="1000">
     <HiOutlineDesktopComputer className="team-icon" />
     <h2>500+</h2>
-    <div style={{ fontSize: '1rem', color: 'white' }}>Projects Delivered</div>
+    <div className="team-box-description">Projects Delivered</div>
   </div>
   <div className="team-box" data-aos="flip-left" data-aos-duration="1000">
     <RiReservedFill className="team-icon" />
     <h2>40+</h2>
-    <div style={{ fontSize: '1rem', color: 'white' }}>Countries Served</div>
+    <div className="team-box-description">Countries Served</div>
   </div>
   <div className="team-box" data-aos="flip-left" data-aos-duration="1000">
     <RiShakeHandsLine className="team-icon" />
     <h2>99%</h2>
-    <div style={{ fontSize: '1rem', color: 'white' }}>Client Satisfaction</div>
+    <div className="team-box-description">Client Satisfaction</div>
   </div>
   <div className="team-box" data-aos="flip-left" data-aos-duration="1000">
     <MdOutlineVerticalAlignTop className="team-icon" />
     <h2>Top</h2>
-    <div style={{ fontSize: '1rem', color: 'white' }}>Top Rating</div>
+    <div className="team-box-description">Top Rating</div>
   </div>
 </div>
 
