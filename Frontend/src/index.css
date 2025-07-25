@@ -372,12 +372,13 @@ body::before {
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: 100vh;
   padding: 2rem 5%;
   background: var(--dark-gradient);
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .container::before {

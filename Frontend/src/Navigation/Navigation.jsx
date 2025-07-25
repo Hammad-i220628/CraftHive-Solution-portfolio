@@ -77,7 +77,7 @@ const Navigation = () => {
                     <li><Link to="#">Python</Link></li>
                     <li><Link to="#">C++</Link></li>
                     <li><Link to="#">Google Cloud</Link></li>
-                    <li><Link to="#">ML/DL</Link></li>
+                    <li><Link to="#">ML/DS</Link></li>
                     <li><Link to="#">React</Link></li>
                     <li><Link to="#">Ruby</Link></li>
                     <li><Link to="#">Salesforce</Link></li>
