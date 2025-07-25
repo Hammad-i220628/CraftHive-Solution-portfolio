@@ -35,22 +35,6 @@ const Navigation = () => {
         {menuOpen && activeDropdown ? (
           /* Mobile view with active dropdown - show only the dropdown content */
           <>
-            {activeDropdown === 'home' && (
-              <>
-                <li>
-                  <Link 
-                    to="#" 
-                    className="connect-btn" 
-                    onClick={() => toggleDropdown('home')}
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li><Link to="/ValueProposition" onClick={closeMenu}>Value Proposition</Link></li>
-                <li><Link to="/CompanyOverview" onClick={closeMenu}>Company Overview</Link></li>
-                <li><Link to="/HighlightingServices" onClick={closeMenu}>Highlighting Services</Link></li>
-              </>
-            )}
             {activeDropdown === 'services' && (
               <>
                 <li>
@@ -62,28 +46,13 @@ const Navigation = () => {
                     Technologies
                   </Link>
                 </li>
-                <li><Link to="/AIServices" onClick={closeMenu}>AI Automation</Link></li>
-                <li><Link to="/WebDevelopment" onClick={closeMenu}>Web Development</Link></li>
               </>
             )}
           </>
         ) : (
           /* Normal menu - desktop or mobile without active dropdown */
           <>
-            <li className={activeDropdown === 'home' ? 'active-dropdown' : ''}>
-              {menuOpen ? (
-                <Link to="#" onClick={() => toggleDropdown('home')}>Home</Link>
-              ) : (
-                <>
-                  <Link to="#">Home</Link>
-                  <ul className="dropdown">
-                    <li><Link to="/ValueProposition"> Value Proposition </Link></li>
-                    <li><Link to="/CompanyOverview"> Company Overview</Link></li>
-                    <li><Link to="/HighlightingServices"> Highlighting Services</Link></li>
-                  </ul>
-                </>
-              )}
-            </li>
+            <li><Link to="/Home" onClick={closeMenu}>Home</Link></li>
             <li className={activeDropdown === 'services' ? 'active-dropdown' : ''}>
               {menuOpen ? (
                 <Link to="#" onClick={() => toggleDropdown('services')}>Technologies</Link>
@@ -91,38 +60,30 @@ const Navigation = () => {
                 <>
                   <Link to="#">Technologies</Link>
                   <ul className="dropdown tech-dropdown">
-                    <div className="tech-column">
-                      <li><Link to="#">.NET</Link></li>
-                      <li><Link to="#">AI</Link></li>
-                      <li><Link to="#">Angular</Link></li>
-                      <li><Link to="#">AWS</Link></li>
-                      <li><Link to="#">C#</Link></li>
-                      <li><Link to="#">C++</Link></li>
-                    </div>
-                    <div className="tech-column">
-                      <li><Link to="#">Django</Link></li>
-                      <li><Link to="#">Golang</Link></li>
-                      <li><Link to="#">Java</Link></li>
-                      <li><Link to="#">JavaScript</Link></li>
-                      <li><Link to="#">Kotlin</Link></li>
-                      <li><Link to="#">Google Cloud</Link></li>
-                    </div>
-                    <div className="tech-column">
-                      <li><Link to="#">Xamarin</Link></li>
-                      <li><Link to="#">Node.js</Link></li>
-                      <li><Link to="#">PHP</Link></li>
-                      <li><Link to="#">Power BI</Link></li>
-                      <li><Link to="#">Python</Link></li>
-                      <li><Link to="#">Machine Learning</Link></li>
-                    </div>
-                    <div className="tech-column">
-                      <li><Link to="#">React</Link></li>
-                      <li><Link to="#">Ruby</Link></li>
-                      <li><Link to="#">Salesforce</Link></li>
-                      <li><Link to="#">TypeScript</Link></li>
-                      <li><Link to="#">Vue.js</Link></li>
-                      <li><Link to="#">Microsoft Azure</Link></li>
-                    </div>
+                    <li><Link to="#">.NET</Link></li>
+                    <li><Link to="#">Django</Link></li>
+                    <li><Link to="#">Xamarin</Link></li>
+                    <li><Link to="#">AI</Link></li>
+                    <li><Link to="#">Golang</Link></li>
+                    <li><Link to="#">Node.js</Link></li>
+                    <li><Link to="#">Angular</Link></li>
+                    <li><Link to="#">Java</Link></li>
+                    <li><Link to="#">PHP</Link></li>
+                    <li><Link to="#">AWS</Link></li>
+                    <li><Link to="#">JavaScript</Link></li>
+                    <li><Link to="#">Power BI</Link></li>
+                    <li><Link to="#">C#</Link></li>
+                    <li><Link to="#">Kotlin</Link></li>
+                    <li><Link to="#">Python</Link></li>
+                    <li><Link to="#">C++</Link></li>
+                    <li><Link to="#">Google Cloud</Link></li>
+                    <li><Link to="#">ML/DL</Link></li>
+                    <li><Link to="#">React</Link></li>
+                    <li><Link to="#">Ruby</Link></li>
+                    <li><Link to="#">Salesforce</Link></li>
+                    <li><Link to="#">TypeScript</Link></li>
+                    <li><Link to="#">Vue.js</Link></li>
+                    <li><Link to="#">Microsoft Azure</Link></li>
                     <li className="all-technologies-link"><Link to="/AllTechnologies">All technologies</Link></li>
                   </ul>
                 </>

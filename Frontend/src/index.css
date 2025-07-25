@@ -253,7 +253,8 @@ body::before {
 .dropdown {
   position: absolute;
   top: 100%;
-  left: 0;
+  left: -320%;
+  transform: translateX(-50%);
   background: rgba(15, 15, 35, 0.95);
   backdrop-filter: blur(30px);
   border-radius: var(--border-radius);
@@ -303,11 +304,13 @@ body::before {
 }
 
 .tech-dropdown {
-  min-width: 500px;
+  min-width: 800px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem 1rem; /* Added vertical and horizontal gap */
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 0.5rem 0.8rem; /* Reduced gaps for 8-column layout */
   padding: 1rem;
+  grid-auto-flow: column;
 }
 
 .tech-dropdown li {
@@ -346,6 +349,23 @@ body::before {
 .tech-dropdown span {
   font-size: 0.85rem;
   color: var(--text-light);
+}
+
+.all-technologies-link {
+  grid-column: 1 / -1; /* Span across all 8 columns */
+  margin-top: 1rem; /* Add some spacing above */
+  text-align: center;
+}
+
+.all-technologies-link a {
+  background: var(--secondary-gradient) !important;
+  color: var(--text-primary) !important;
+  font-weight: 700 !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 25px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3) !important;
 }
 
 /* Hero Section */
