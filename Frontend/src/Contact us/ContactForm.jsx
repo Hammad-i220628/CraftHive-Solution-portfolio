@@ -130,7 +130,7 @@ const ContactForm = () => {
               />
             </div>
             <button type="submit" className="contact-btn" disabled={state.submitting}>
-              Get in Touch
+              SEND MESSAGE
             </button>
           </form>
         </div>
@@ -148,55 +148,6 @@ const ContactForm = () => {
           </p>
         </div>
       </div>
-
-      <div className="contact-container">
-        <p className="info-text">
-          Attach relevant documents (e.g., resume, project files, or images) for
-          better assistance.
-        </p>
-        <form className="contact-form" onSubmit={handleSubmit}>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <ValidationError 
-            prefix="Name" 
-            field="name"
-            errors={state.errors}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-          <ValidationError 
-            prefix="Email" 
-            field="email"
-            errors={state.errors}
-          />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <ValidationError 
-            prefix="Message" 
-            field="message"
-            errors={state.errors}
-          />
-
-          <label htmlFor="file-upload" className="file-label">
-            Upload File (PDF, Image, etc.)
-          </label>
-          <input
-            type="file"
-            id="file-upload"
-            name="attachment"
-            className="file-input"
-            onChange={handleFileChange}
-          />
-
-          <button type="submit" className="submit-btn" disabled={state.submitting}>
-            Send Message
-          </button>
-        </form>
-
-        {file && <p className="uploaded-file">File: {file.name}</p>}
-        </div>
       </div>
       
 
@@ -204,5 +155,4 @@ const ContactForm = () => {
     </>
   );
 };
-
 export default ContactForm;

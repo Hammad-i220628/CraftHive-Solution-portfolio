@@ -1578,7 +1578,39 @@ body::before {
   transition: var(--transition);
 }
 
+/* Special positioning for textarea icons */
+.input-wrapper textarea + .input-icon {
+  top: 2rem;
+  transform: none;
+}
+
 .input-wrapper input:focus + .input-icon {
+  color: #667eea;
+}
+
+.input-wrapper textarea {
+  width: 100%;
+  padding: 1.5rem 1.5rem 1.5rem 4rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  transition: var(--transition);
+  background: #f9fafb;
+  font-weight: 500;
+  min-height: 150px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.input-wrapper textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+  transform: scale(1.02);
+}
+
+.input-wrapper textarea:focus + .input-icon {
   color: #667eea;
 }
 
