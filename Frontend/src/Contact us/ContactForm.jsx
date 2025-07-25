@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const ContactForm = () => {
-  const [state, handleSubmit] = useForm("xpwlddwo");
+  const [state, handleSubmit] = useForm("xjkowwaq");
   const [file, setFile] = useState(null);
 
   const handleFileChange = (e) => {
@@ -20,7 +20,7 @@ const ContactForm = () => {
         <div className="background-container">
           <div className="child4">
             <h2>Thank You!</h2>
-            <h3>Your message has been sent successfully</h3>
+            <h3>Thanks for joining!</h3>
             <button 
               className="whatsapp-chat-btn" 
               onClick={() => window.open('https://wa.me/923340545803', '_blank')}
