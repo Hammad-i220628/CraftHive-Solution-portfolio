@@ -91,7 +91,7 @@ const Navigation = () => {
             </li>
             <li><Link to="/Portfolio" onClick={closeMenu}>Projects</Link></li>
             <li><Link to="/About" onClick={closeMenu}>About Us</Link></li>
-            <li><Link to="/ContactForm" className='connect-btn' onClick={closeMenu}>Contact Us</Link></li>
+            <li><Link to="/Contact" className='connect-btn' onClick={closeMenu}>Contact Us</Link></li>
           </>
         )}
       </ul>

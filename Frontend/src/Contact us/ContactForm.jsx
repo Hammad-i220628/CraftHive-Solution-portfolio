@@ -1,70 +1,38 @@
 import React, { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 import { FaUser, FaEnvelope, FaPhone, FaPencilAlt } from "react-icons/fa";
 import Footer from "../Home/Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios"; 
 
 const ContactForm = () => {
+  const [state, handleSubmit] = useForm("xpwlddwo");
   const [file, setFile] = useState(null);
-  const [email, setEmail] = useState("");
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
   };
 
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!file) {
-      toast.error("Please upload a file before submitting!", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-      return;
-    }
-
-    if (!email) {
-      toast.error("Please enter your email!", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-      return;
-    }
-
-    // Prepare form data for the backend
-    const formData = new FormData();
-    formData.append("file", file);
-    formData.append("email", email);
-
-    try {
-      // Send data to the backend API
-      const response = await axios.post(
-        "http://localhost:5000/api/sendContactForm",
-        formData
-      );
-
-      if (response.data.success) {
-        toast.success("Message sent successfully!", {
-          position: "top-right",
-          autoClose: 3000,
-        });
-      } else {
-        toast.error("Error sending message", {
-          position: "top-right",
-          autoClose: 3000,
-        });
-      }
-    } catch (error) {
-      toast.error("Error sending message", {
-        position: "top-right",
-        autoClose: 3000,
-      });
-    }
-  };
+  // Show success message if form was submitted successfully
+  if (state.succeeded) {
+    return (
+      <>
+        <div className="background-container">
+          <div className="child4">
+            <h2>Thank You!</h2>
+            <h3>Your message has been sent successfully</h3>
+            <button 
+              className="whatsapp-chat-btn" 
+              onClick={() => window.open('https://wa.me/923340545803', '_blank')}
+            >
+              CHAT VIA WHATSAPP
+            </button>
+          </div>
+        </div>
+        <Footer />
+      </>
+    );
+  }
 
   return (
     <>
@@ -102,6 +70,11 @@ const ContactForm = () => {
                 />
                 <FaUser className="input-icon" />
               </div>
+              <ValidationError 
+                prefix="Name" 
+                field="name"
+                errors={state.errors}
+              />
             </div>
             <div className="input-group">
               <label htmlFor="email">Email</label>
@@ -112,11 +85,14 @@ const ContactForm = () => {
                   name="email"
                   placeholder="Your Email"
                   required
-                  value={email}
-                  onChange={handleEmailChange}
                 />
                 <FaEnvelope className="input-icon" />
               </div>
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+              />
             </div>
             <div className="input-group">
               <label htmlFor="phone">Phone</label>
@@ -130,21 +106,30 @@ const ContactForm = () => {
                 />
                 <FaPhone className="input-icon" />
               </div>
+              <ValidationError 
+                prefix="Phone" 
+                field="phone"
+                errors={state.errors}
+              />
             </div>
             <div className="input-group">
               <label htmlFor="details">Details</label>
               <div className="input-wrapper">
-                <input
-                  type="text"
+                <textarea
                   id="details"
-                  name="details"
+                  name="message"
                   placeholder="Project Details"
                   required
-                />
+                ></textarea>
                 <FaPencilAlt className="input-icon" />
               </div>
+              <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+              />
             </div>
-            <button type="submit" className="contact-btn">
+            <button type="submit" className="contact-btn" disabled={state.submitting}>
               Get in Touch
             </button>
           </form>
@@ -170,15 +155,29 @@ const ContactForm = () => {
           better assistance.
         </p>
         <form className="contact-form" onSubmit={handleSubmit}>
-          <input type="text" placeholder="Your Name" required />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <ValidationError 
+            prefix="Name" 
+            field="name"
+            errors={state.errors}
+          />
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
             required
-            value={email}
-            onChange={handleEmailChange}
           />
-          <textarea placeholder="Your Message" required></textarea>
+          <ValidationError 
+            prefix="Email" 
+            field="email"
+            errors={state.errors}
+          />
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <ValidationError 
+            prefix="Message" 
+            field="message"
+            errors={state.errors}
+          />
 
           <label htmlFor="file-upload" className="file-label">
             Upload File (PDF, Image, etc.)
@@ -186,18 +185,18 @@ const ContactForm = () => {
           <input
             type="file"
             id="file-upload"
+            name="attachment"
             className="file-input"
             onChange={handleFileChange}
           />
 
-          <button type="submit" className="submit-btn">
+          <button type="submit" className="submit-btn" disabled={state.submitting}>
             Send Message
           </button>
         </form>
 
         {file && <p className="uploaded-file">File: {file.name}</p>}
         </div>
-        <ToastContainer />
       </div>
       
 

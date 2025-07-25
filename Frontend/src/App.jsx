@@ -3,7 +3,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navigation from "./Navigation/Navigation";
-import ContactForm from './Contact us/ContactForm';
 import Home from "./Home/Home";
 import './index.css'
 import './responsive.css'
@@ -13,6 +12,7 @@ import About from './About us/About'
 import SeparateComp from "./Home/SeparateComp";
 import Portfolio from "./Portfolio/Portfolio";
 import AllTechnologies from "./Technologies/AllTechnologies";
+import ContactForm from "./Contact us/ContactForm";
 import { AnimatePresence } from 'framer-motion';
 
 
@@ -33,13 +33,13 @@ useEffect(() => {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ContactForm" element={<ContactForm />} />
         <Route path="/Home" element={<Home/>} />
         <Route path="/Footer" element={<Footer/>} />
         <Route path="/About" element={<About/>} />
         <Route path="/SeparateComp" element={<SeparateComp/>} />
         <Route path="/Portfolio" element={<Portfolio />} />
         <Route path="/AllTechnologies" element={<AllTechnologies />} />
+        <Route path="/Contact" element={<ContactForm />} />
      
       </Routes>
       </AnimatePresence>
